@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@use "/src/assets/scss/variables" as v;
+@use "/src/assets/scss/fonts" as f;
+@use "/src/assets/scss/mixins" as m;
+@use "/src/assets/scss/themes" as t;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  @include m.font-size(f.$base-font-sizes);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--ff-default);
+  transition: all 0.35s ease;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 9px;
+  opacity: 0.75;
+  background: var(--brand-color);
+  color: var(--btn-txt-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
