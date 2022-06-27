@@ -10,4 +10,8 @@ export class HeaderComponent implements OnInit {
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {}
+
+  switchTheme(): void {
+    this.themeService.switchTheme();
+  }
 }

@@ -2,12 +2,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10px;
-
-  padding: 1rem;
+  height: var(--header-height);
+  padding: 0 1rem;
 }
 
 .logo {
+  font-family: var(--ff-alt);
   color: var(--brand-color);
 }
 
@@ -24,5 +24,13 @@ nav {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.theme-switch {
+  padding: 1rem;
+
+  &:hover {
+    cursor: pointer;
   }
 }

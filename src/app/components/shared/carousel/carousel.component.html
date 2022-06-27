@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="inline-scroller snaps-inline">
+    <div
+      class="img-container"
+      *ngFor="let image of images; let i = index"
+      id="image-{{ i + 1 }}"
+    >
+      <img class="carousel-img" src="{{ this.images[i] }}" alt="" />
+    </div>
+  </div>
+  <div class="navigators">
+    <div
+      class="navigator"
+      *ngFor="let navigator of images; let i = index"
+      (click)="setCurrentImage(i)"
+    ></div>
+  </div>
+</div>
