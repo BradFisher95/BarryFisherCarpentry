@@ -1,4 +1,11 @@
 section {
   width: 100vw;
   height: calc(100vh - var(--header-height));
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    height: auto;
+  }
 }

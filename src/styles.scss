@@ -20,6 +20,7 @@ body {
   color: var(--text-color);
   font-family: var(--ff-default);
   transition: all 0.35s ease;
+  overflow-x: hidden;
 }
 
 .box {
@@ -44,7 +45,18 @@ body {
   }
 }
 
-.inline-scroller {
+.inline-scroller.projects-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 38%;
+  justify-content: start;
+  gap: 2rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+}
+
+.inline-scroller.carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
@@ -53,14 +65,27 @@ body {
   scroll-behavior: smooth;
 }
 
-.inline-scroller::-webkit-scrollbar {
+.inline-scroller.carousel::-webkit-scrollbar {
   display: none;
 }
 
 .snaps-inline {
   scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 2rem;
 }
 
 .snaps-inline > * {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+}
+
+.horizontal-line {
+  width: 40%;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+.vertical-line {
+  width: 2px;
+  height: 80%;
+  background-color: var(--text-color);
 }

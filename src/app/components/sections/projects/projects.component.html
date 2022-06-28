@@ -1,0 +1,8 @@
+<section id="projects">
+  <h2 class="heading">Projects</h2>
+  <div class="projects-container inline-scroller snaps-inline">
+    <div class="project" *ngFor="let project of projects; let i = index">
+      <h3>{{ projects[i].title }}</h3>
+    </div>
+  </div>
+</section>
