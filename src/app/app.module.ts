@@ -9,9 +9,11 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
 import { LandingComponent } from './components/sections/landing/landing.component';
 import { AboutComponent } from './components/sections/about/about.component';
 import { ProjectsComponent } from './components/sections/projects/projects.component';
+import { ServicesComponent } from './components/sections/services/services.component';
+import { AccordianComponent } from './components/shared/accordian/accordian.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CarouselComponent, LandingComponent, AboutComponent, ProjectsComponent],
+  declarations: [AppComponent, HeaderComponent, CarouselComponent, LandingComponent, AboutComponent, ProjectsComponent, ServicesComponent, AccordianComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

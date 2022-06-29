@@ -20,7 +20,23 @@ body {
   color: var(--text-color);
   font-family: var(--ff-default);
   transition: all 0.35s ease;
-  overflow-x: hidden;
+}
+
+.heading {
+  text-align: center;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 700px;
+}
+
+.flex-item {
+  max-width: 45%;
+  padding: 1rem;
 }
 
 .box {
@@ -45,18 +61,7 @@ body {
   }
 }
 
-.inline-scroller.projects-container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 38%;
-  justify-content: start;
-  gap: 2rem;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-behavior: smooth;
-}
-
-.inline-scroller.carousel {
+.inline-scroller {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
@@ -65,7 +70,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.inline-scroller.carousel::-webkit-scrollbar {
+.inline-scroller::-webkit-scrollbar {
   display: none;
 }
 
@@ -76,6 +81,21 @@ body {
 
 .snaps-inline > * {
   scroll-snap-align: start;
+}
+
+.section-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 2rem 0;
+}
+
+.circle {
+  width: 1rem;
+  aspect-ratio: 1/1;
+  background-color: var(--text-color);
+  border-radius: 50%;
 }
 
 .horizontal-line {
