@@ -31,11 +31,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 700px;
+  padding: 2rem;
 }
 
 .flex-item {
-  max-width: 45%;
+  min-width: 45%;
   padding: 1rem;
 }
 
@@ -87,8 +87,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  margin: 2rem 0;
+  height: min-content;
 }
 
 .circle {

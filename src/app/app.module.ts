@@ -11,9 +11,11 @@ import { AboutComponent } from './components/sections/about/about.component';
 import { ProjectsComponent } from './components/sections/projects/projects.component';
 import { ServicesComponent } from './components/sections/services/services.component';
 import { AccordianComponent } from './components/shared/accordian/accordian.component';
+import { TestimonialsComponent } from './components/sections/testimonials/testimonials.component';
+import { ContactComponent } from './components/sections/contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CarouselComponent, LandingComponent, AboutComponent, ProjectsComponent, ServicesComponent, AccordianComponent],
+  declarations: [AppComponent, HeaderComponent, CarouselComponent, LandingComponent, AboutComponent, ProjectsComponent, ServicesComponent, AccordianComponent, TestimonialsComponent, ContactComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

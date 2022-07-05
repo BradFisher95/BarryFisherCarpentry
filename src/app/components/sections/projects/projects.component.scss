@@ -10,6 +10,16 @@ section {
       width: 30%;
       aspect-ratio: 1/1;
       background-color: blue;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-container {
+    flex-direction: column;
+    .project {
+      min-width: 100%;
     }
   }
 }
