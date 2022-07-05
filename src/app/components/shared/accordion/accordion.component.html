@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="accordion-header">
+    <h2 class="title"><ng-content select="[title]"></ng-content></h2>
+    <span #arrow class="arrow bold" (click)="toggleInfo()">></span>
+  </div>
+  <div #info class="more-info box">
+    <ng-content select="[info]"></ng-content>
+  </div>
+</div>
