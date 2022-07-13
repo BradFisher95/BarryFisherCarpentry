@@ -1,6 +1,15 @@
 section {
   .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
     padding: 2rem;
+
+    app-testimonial {
+      width: 90%;
+    }
   }
 }

@@ -19,10 +19,10 @@ export class TestimonialComponent implements AfterViewInit {
   constructor() {}
 
   ngAfterViewInit(): void {
-    if (this.imgSrc) {
-      return;
-    } else {
-      this.img.nativeElement.classList.add('hide');
-    }
+    this.imgSrc
+      ? () => {
+          return;
+        }
+      : this.img.nativeElement.classList.add('hide');
   }
 }
