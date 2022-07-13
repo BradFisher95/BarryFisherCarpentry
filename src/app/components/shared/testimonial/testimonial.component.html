@@ -1,0 +1,11 @@
+<div class="container flex box">
+  <div class="attestant-container">
+    <div class="img-container" #img>
+      <img src="{{ this.imgSrc }}" alt="attestant-profile-image" />
+    </div>
+    <div class="attestant-name"><ng-content select="[name]"></ng-content></div>
+  </div>
+  <div class="testimony-container">
+    <ng-content select="[testimony]"></ng-content>
+  </div>
+</div>

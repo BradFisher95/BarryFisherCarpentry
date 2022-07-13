@@ -13,6 +13,7 @@ import { ServicesComponent } from './components/sections/services/services.compo
 import { accordionComponent } from './components/shared/accordion/accordion.component';
 import { TestimonialsComponent } from './components/sections/testimonials/testimonials.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
+import { TestimonialComponent } from './components/shared/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactComponent } from './components/sections/contact/contact.componen
     accordionComponent,
     TestimonialsComponent,
     ContactComponent,
+    TestimonialComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

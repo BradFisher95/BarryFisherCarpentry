@@ -1,0 +1,42 @@
+.container {
+  width: 1000px;
+  height: 200px;
+  gap: 1rem;
+  border-radius: 9px;
+
+  .attestant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+      width: 80%;
+      height: 80%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    .attestant-name {
+      min-width: max-content;
+      font-weight: var(--fw-bold);
+      color: var(--brand-color);
+    }
+  }
+
+  .testimony-container {
+    height: 100%;
+    padding: 1rem;
+    border-radius: 9px;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+  }
+}
+
+.hide {
+  display: none;
+}
