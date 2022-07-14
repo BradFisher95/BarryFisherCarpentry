@@ -4,7 +4,6 @@ import {
   ElementRef,
   AfterViewInit,
   QueryList,
-  ViewChild,
 } from '@angular/core';
 import { NavigationService } from 'src/services/navigation.service';
 
