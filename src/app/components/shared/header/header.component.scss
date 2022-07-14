@@ -1,14 +1,23 @@
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
   padding: 0 1rem;
+  z-index: 2;
 }
 
 .logo {
   font-family: var(--ff-alt);
   color: var(--brand-color);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-links {
@@ -17,20 +26,27 @@ nav {
 
   .link {
     padding: 1rem;
+    opacity: 0.75;
     a {
       text-decoration: none;
       color: inherit;
     }
     &:hover {
       cursor: pointer;
+      opacity: 1;
     }
+    transition: opacity 0.2s ease-in-out;
   }
 }
 
 .theme-switch {
-  padding: 1rem;
+  margin: 1rem;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.active {
+  opacity: 1;
 }

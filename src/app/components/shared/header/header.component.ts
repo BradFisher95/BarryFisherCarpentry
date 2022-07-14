@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ThemeService } from 'src/services/theme.service';
+import { NavigationService } from 'src/services/navigation.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
-  constructor(private themeService: ThemeService) {}
+export class HeaderComponent {
+  constructor(
+    private themeService: ThemeService,
+    private navService: NavigationService
+  ) {}
 
-  ngOnInit(): void {}
+  navigateTo(requestedSection: string) {
+    this.navService.navigateTo(requestedSection);
+  }
 
   switchTheme(): void {
     this.themeService.switchTheme();

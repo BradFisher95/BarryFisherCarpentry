@@ -1,13 +1,13 @@
-<nav>
-  <div class="logo">
+<nav class="box">
+  <div class="logo" (click)="navigateTo('landing')">
     <h1>Barry Fisher Carpentry</h1>
   </div>
   <ul class="nav-links">
-    <li class="link"><a href="#">About</a></li>
-    <li class="link"><a href="#">Projects</a></li>
-    <li class="link"><a href="#">Services</a></li>
-    <li class="link"><a href="#">Testimonials</a></li>
-    <li class="link"><a href="#">Contact</a></li>
+    <li class="link" (click)="navigateTo('about')">About</li>
+    <li class="link" (click)="navigateTo('projects')">Projects</li>
+    <li class="link" (click)="navigateTo('services')">Services</li>
+    <li class="link" (click)="navigateTo('testimonials')">Testimonials</li>
+    <li class="link" (click)="navigateTo('contact')">Contact</li>
   </ul>
-  <p class="box theme-switch bold" (click)="switchTheme()">Switch Theme</p>
+  <p class="btn theme-switch bold" (click)="switchTheme()">Switch Theme</p>
 </nav>
