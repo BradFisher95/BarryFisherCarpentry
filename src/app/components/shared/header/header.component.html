@@ -3,11 +3,46 @@
     <h1>Barry Fisher Carpentry</h1>
   </div>
   <ul class="nav-links">
-    <li class="link" (click)="navigateTo('about')">About</li>
-    <li class="link" (click)="navigateTo('projects')">Projects</li>
-    <li class="link" (click)="navigateTo('services')">Services</li>
-    <li class="link" (click)="navigateTo('testimonials')">Testimonials</li>
-    <li class="link" (click)="navigateTo('contact')">Contact</li>
+    <li class="link bold">
+      <a
+        [routerLink]="['/home']"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li class="link bold">
+      <a
+        [routerLink]="['/projects']"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Projects</a
+      >
+    </li>
+    <li class="link bold">
+      <a
+        [routerLink]="['/about']"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >About</a
+      >
+    </li>
+    <li class="link bold">
+      <a
+        [routerLink]="['/testimonials']"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Testimonials</a
+      >
+    </li>
+    <li class="link bold">
+      <a
+        [routerLink]="['/contact']"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Contact</a
+      >
+    </li>
   </ul>
   <p class="btn theme-switch bold" (click)="switchTheme()">Switch Theme</p>
 </nav>
