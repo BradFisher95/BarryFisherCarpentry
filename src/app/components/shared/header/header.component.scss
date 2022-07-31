@@ -1,14 +1,9 @@
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--header-height);
-  padding: 0 1rem;
-  z-index: 2;
 }
 
 .logo {
