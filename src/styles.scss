@@ -46,12 +46,16 @@ body {
 }
 
 .btn {
-  padding: 1rem;
+  max-width: max-content;
+  padding: 1rem 2rem;
   border-radius: 9px;
+  outline: none;
+  border: none;
   opacity: 0.75;
   background: var(--brand-color);
   color: var(--btn-txt-color);
-  font-weight: 600;
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
   cursor: pointer;
   transition: all 0.35s ease;
 
@@ -80,30 +84,4 @@ body {
 
 .snaps-inline > * {
   scroll-snap-align: start;
-}
-
-.section-end {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: min-content;
-}
-
-.circle {
-  width: 1rem;
-  aspect-ratio: 1/1;
-  background-color: var(--text-color);
-  border-radius: 50%;
-}
-
-.horizontal-line {
-  width: 40%;
-  height: 2px;
-  background-color: var(--text-color);
-}
-
-.vertical-line {
-  width: 2px;
-  height: 80%;
-  background-color: var(--text-color);
 }
