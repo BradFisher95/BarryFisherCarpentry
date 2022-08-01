@@ -1,12 +1,47 @@
 <section id="contact">
-  <div class="flex">
-    <div class="contact-info flex-item">
-      <h2 class="heading bold">Contact</h2>
-      <div><span>07555115706</span></div>
-      <div><span>bfisher@mail.com</span></div>
-    </div>
-    <div class="img-container flex-item">
-      <img src="" alt="" />
-    </div>
+  <div class="CTA">
+    <h2>Do you have a project in mind?</h2>
+    <p>
+      I would love to hear more from you. Please fill in the contact form, or
+      give me a call on the number below and I will get back to you as soon as
+      possible.
+    </p>
+    <p>
+      Please note, I can only undertake work within a 50 mile radius of
+      Wolverhampton. Thank you.
+    </p>
+    <span>07725747328</span>
   </div>
+
+  <form
+    [formGroup]="contactFormGroup"
+    (ngSubmit)="onSubmit()"
+    class="contact-form"
+  >
+    <label for="name">Name <span class="asterisk">*</span></label>
+    <input id="name" type="text" formControlName="name" required />
+    <label for="telephone">Telephone <span class="asterisk">*</span></label>
+    <input
+      id="telephone"
+      type="tel"
+      pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+      formControlName="telephone"
+      required
+    />
+    <label for="email">Email <span class="asterisk">*</span></label>
+    <input id="email" type="email" formControlName="email" />
+    <label for="postcode">Postcode <span class="asterisk">*</span></label>
+    <input
+      id="postcode"
+      type="text"
+      pattern="^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$"
+      formControlName="postcode"
+      required
+    />
+    <label for="enquiryDetails"
+      >Enquiry Details <span class="asterisk">*</span></label
+    >
+    <textarea id="enquiryDetails" formControlName="enquiryDetails"> </textarea>
+    <button type="submit" class="btn">Submit</button>
+  </form>
 </section>
