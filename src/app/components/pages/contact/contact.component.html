@@ -18,30 +18,45 @@
     (ngSubmit)="onSubmit()"
     class="contact-form"
   >
-    <label for="name">Name <span class="asterisk">*</span></label>
-    <input id="name" type="text" formControlName="name" required />
-    <label for="telephone">Telephone <span class="asterisk">*</span></label>
-    <input
-      id="telephone"
-      type="tel"
-      pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
-      formControlName="telephone"
-      required
-    />
-    <label for="email">Email <span class="asterisk">*</span></label>
-    <input id="email" type="email" formControlName="email" />
-    <label for="postcode">Postcode <span class="asterisk">*</span></label>
-    <input
-      id="postcode"
-      type="text"
-      pattern="^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$"
-      formControlName="postcode"
-      required
-    />
-    <label for="enquiryDetails"
-      >Enquiry Details <span class="asterisk">*</span></label
+    <div>
+      <label for="name">Name <span class="asterisk">*</span></label>
+      <input id="name" type="text" formControlName="name" required />
+    </div>
+    <div>
+      <label for="telephone">Telephone <span class="asterisk">*</span></label>
+      <input
+        id="telephone"
+        type="tel"
+        pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+        formControlName="telephone"
+        required
+      />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" />
+    </div>
+    <div>
+      <label for="postcode">Postcode <span class="asterisk">*</span></label>
+      <input
+        id="postcode"
+        type="text"
+        pattern="^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$"
+        formControlName="postcode"
+        required
+      />
+    </div>
+    <div>
+      <label for="enquiryDetails"
+        >Enquiry Details <span class="asterisk">*</span></label
+      >
+      <textarea id="enquiryDetails" formControlName="enquiryDetails">
+      </textarea>
+    </div>
+    <span class="bold"
+      >Please note all fields marked <span class="asterisk">*</span> are
+      required.</span
     >
-    <textarea id="enquiryDetails" formControlName="enquiryDetails"> </textarea>
     <button type="submit" class="btn">Submit</button>
   </form>
 </section>
