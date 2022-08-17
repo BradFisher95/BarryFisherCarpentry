@@ -8,11 +8,9 @@ import { Component, ElementRef, AfterViewInit } from '@angular/core';
 export class CarouselComponent implements AfterViewInit {
   public images: string[] = [
     '../assets/images/carousel-images/img-1.jpg',
-    '../assets/images/carousel-images/img-1.jpg',
-    '../assets/images/carousel-images/img-1.jpg',
-    '../assets/images/carousel-images/img-1.jpg',
-    '../assets/images/carousel-images/img-1.jpg',
-    '../assets/images/carousel-images/img-1.jpg',
+    '../assets/images/carousel-images/img-2.jpg',
+    '../assets/images/carousel-images/img-3.jpg',
+    '../assets/images/carousel-images/img-4.jpg',
   ];
   public currentImage: number = 0;
 
