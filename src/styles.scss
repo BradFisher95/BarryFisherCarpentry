@@ -75,3 +75,12 @@ body {
 .snaps-inline > * {
   scroll-snap-align: start;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-color);
+  border-radius: 10px;
+}
