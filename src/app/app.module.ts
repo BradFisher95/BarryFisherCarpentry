@@ -18,6 +18,8 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
 import { accordionComponent } from './components/shared/accordion/accordion.component';
 import { TestimonialComponent } from './components/shared/testimonial/testimonial.component';
 import { NavLinksComponent } from './components/shared/nav-links/nav-links.component';
+import { HeaderModule } from './components/shared/header/header.module';
+import { HamburgerComponent } from './components/shared/hamburger/hamburger.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +35,14 @@ import { NavLinksComponent } from './components/shared/nav-links/nav-links.compo
     TestimonialComponent,
     NavLinksComponent,
     FooterComponent,
+    HamburgerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     ReactiveFormsModule,
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
