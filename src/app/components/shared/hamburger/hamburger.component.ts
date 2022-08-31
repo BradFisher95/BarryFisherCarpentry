@@ -7,6 +7,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class HamburgerComponent implements OnInit {
   @ViewChild('drawer') private drawer!: ElementRef;
+  @ViewChild('dimmer') private dimmer!: ElementRef;
 
   public isDrawOpen: boolean = false;
 
@@ -15,10 +16,17 @@ export class HamburgerComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleDraw(): void {
-    this.isDrawOpen ? (this.isDrawOpen = false) : (this.isDrawOpen = true);
+    this.isDrawOpen = !this.isDrawOpen;
+    this.isDrawOpen ? this.openDrawer() : this.closeDrawer();
+  }
 
-    if (this.isDrawOpen) {
-      this.drawer.nativeElement.classList.add('open');
-    } else this.drawer.nativeElement.classList.remove('open');
+  openDrawer(): void {
+    this.drawer.nativeElement.classList.add('open');
+    this.dimmer.nativeElement.classList.add('open');
+  }
+
+  closeDrawer(): void {
+    this.drawer.nativeElement.classList.remove('open');
+    this.dimmer.nativeElement.classList.remove('open');
   }
 }

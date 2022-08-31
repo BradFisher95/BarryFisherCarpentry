@@ -21,4 +21,12 @@
       transition: opacity 0.2s ease-in-out;
     }
   }
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  &.vertical {
+    flex-direction: column;
+  }
 }
