@@ -7,6 +7,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class HamburgerComponent implements OnInit {
   @ViewChild('drawer') private drawer!: ElementRef;
+  @ViewChild('content') private content!: ElementRef;
   @ViewChild('dimmer') private dimmer!: ElementRef;
 
   public isDrawOpen: boolean = false;
@@ -21,11 +22,13 @@ export class HamburgerComponent implements OnInit {
   }
 
   openDrawer(): void {
+    this.content.nativeElement.classList.add('visible');
     this.drawer.nativeElement.classList.add('open');
     this.dimmer.nativeElement.classList.add('open');
   }
 
   closeDrawer(): void {
+    this.content.nativeElement.classList.remove('visible');
     this.drawer.nativeElement.classList.remove('open');
     this.dimmer.nativeElement.classList.remove('open');
   }

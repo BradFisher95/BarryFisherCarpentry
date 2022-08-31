@@ -34,7 +34,7 @@
 }
 
 .drawer.open {
-  width: 40%;
+  width: 45%;
 }
 
 .drawer-content {
@@ -44,6 +44,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+
+  &.visible {
+    opacity: 100%;
+  }
 }
 
 .dimmer {
