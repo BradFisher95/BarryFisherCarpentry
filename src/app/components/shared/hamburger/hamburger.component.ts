@@ -6,6 +6,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./hamburger.component.scss'],
 })
 export class HamburgerComponent implements OnInit {
+  @ViewChild('hamburger') private hamburger!: ElementRef;
   @ViewChild('drawer') private drawer!: ElementRef;
   @ViewChild('content') private content!: ElementRef;
   @ViewChild('dimmer') private dimmer!: ElementRef;
@@ -22,14 +23,16 @@ export class HamburgerComponent implements OnInit {
   }
 
   openDrawer(): void {
-    this.content.nativeElement.classList.add('visible');
+    this.hamburger.nativeElement.classList.add('open');
     this.drawer.nativeElement.classList.add('open');
+    this.content.nativeElement.classList.add('visible');
     this.dimmer.nativeElement.classList.add('open');
   }
 
   closeDrawer(): void {
-    this.content.nativeElement.classList.remove('visible');
+    this.hamburger.nativeElement.classList.remove('open');
     this.drawer.nativeElement.classList.remove('open');
+    this.content.nativeElement.classList.remove('visible');
     this.dimmer.nativeElement.classList.remove('open');
   }
 }

@@ -4,9 +4,6 @@
   z-index: 4;
   transition: transform 0.25s ease-in-out;
   position: relative;
-}
-
-.hamburger:hover {
   cursor: pointer;
 }
 
@@ -21,11 +18,27 @@
     opacity 0.25s ease-in-out;
 }
 
+.hamburger.open .line2 {
+  opacity: 0;
+}
+
+.hamburger.open .line1 {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.hamburger.open .line3 {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+.hamburger.open {
+  transform: rotate(180deg);
+}
+
 .drawer {
   width: 0;
   height: 100%;
   background-color: var(--box-color);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -46,15 +59,17 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
+  pointer-events: none;
 
   &.visible {
     opacity: 100%;
+    pointer-events: all;
   }
 }
 
 .dimmer {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
