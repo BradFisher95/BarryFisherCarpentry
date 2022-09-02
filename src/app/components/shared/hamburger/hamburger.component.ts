@@ -27,6 +27,7 @@ export class HamburgerComponent implements OnInit {
     this.drawer.nativeElement.classList.add('open');
     this.content.nativeElement.classList.add('visible');
     this.dimmer.nativeElement.classList.add('open');
+    document.body.classList.add('no-scroll');
   }
 
   closeDrawer(): void {
@@ -34,5 +35,6 @@ export class HamburgerComponent implements OnInit {
     this.drawer.nativeElement.classList.remove('open');
     this.content.nativeElement.classList.remove('visible');
     this.dimmer.nativeElement.classList.remove('open');
+    document.body.classList.remove('no-scroll');
   }
 }

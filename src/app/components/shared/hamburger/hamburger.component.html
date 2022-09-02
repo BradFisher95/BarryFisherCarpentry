@@ -6,7 +6,7 @@
 
 <div class="drawer" id="drawer" #drawer>
   <div class="drawer-content" #content>
-    <app-nav-links [isVertical]="true"></app-nav-links>
+    <app-nav-links [isVertical]="true" (click)="toggleDrawer()"></app-nav-links>
   </div>
 </div>
 
