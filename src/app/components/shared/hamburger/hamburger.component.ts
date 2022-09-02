@@ -17,7 +17,7 @@ export class HamburgerComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  toggleDraw(): void {
+  toggleDrawer(): void {
     this.isDrawOpen = !this.isDrawOpen;
     this.isDrawOpen ? this.openDrawer() : this.closeDrawer();
   }
