@@ -84,3 +84,7 @@ body {
   background: var(--brand-color);
   border-radius: 10px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

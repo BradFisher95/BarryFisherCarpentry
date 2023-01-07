@@ -1,28 +1,14 @@
-import {
-  Component,
-  Input,
-  AfterViewInit,
-  ViewChild,
-  ElementRef,
-} from '@angular/core';
+import { Component, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-testimonial',
   templateUrl: './testimonial.component.html',
   styleUrls: ['./testimonial.component.scss'],
 })
-export class TestimonialComponent implements AfterViewInit {
+export class TestimonialComponent {
   @ViewChild('img') img!: ElementRef;
 
   @Input() imgSrc: string | undefined;
 
   constructor() {}
-
-  ngAfterViewInit(): void {
-    this.imgSrc
-      ? () => {
-          return;
-        }
-      : this.img.nativeElement.classList.add('hide');
-  }
 }
