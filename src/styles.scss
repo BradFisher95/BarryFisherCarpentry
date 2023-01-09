@@ -39,16 +39,14 @@ body {
   border-radius: 9px;
   outline: none;
   border: none;
-  opacity: 0.75;
   background: var(--brand-color);
   color: var(--btn-txt-color);
-  font-size: var(--fs-large);
-  font-weight: var(--fw-bold);
+  font-size: var(--fs-default);
   cursor: pointer;
   transition: all 0.35s ease;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.75;
   }
 }
 
@@ -59,12 +57,13 @@ body {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden;
 }
 
 .inline-scroller::-webkit-scrollbar {
   display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .snaps-inline {

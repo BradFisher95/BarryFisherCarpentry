@@ -1,1 +1,11 @@
-<app-carousel></app-carousel>
+<div class="home-container">
+  <div class="carousel-container">
+    <app-carousel></app-carousel>
+  </div>
+  <h2 class="pageTitle">What I can do for you</h2>
+  <div class="services-container">
+    <app-card
+      *ngFor="let service of services$ | async"
+      [service]="service"></app-card>
+  </div>
+</div>

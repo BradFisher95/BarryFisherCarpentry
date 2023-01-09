@@ -3,19 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 350px;
-  min-height: 400px;
+  width: 500px;
+  height: 650px;
   margin-inline: auto;
   border-radius: 9px;
 
   .icon {
+    margin-top: 2rem;
     color: var(--brand-color);
     font-size: var(--fs-xlarge);
   }
 
   .testimony-container {
-    text-align: justify;
-    font-style: italic;
     padding: 2rem;
   }
 }

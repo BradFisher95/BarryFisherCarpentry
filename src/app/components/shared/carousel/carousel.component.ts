@@ -13,6 +13,7 @@ export class CarouselComponent implements AfterViewInit {
     '../assets/images/carousel-images/img-4.jpg',
   ];
   public currentImage: number = 0;
+  private interval: any;
 
   constructor(private el: ElementRef) {}
 
@@ -22,6 +23,7 @@ export class CarouselComponent implements AfterViewInit {
   }
 
   setCurrentImage(newImage: number): void {
+    clearInterval(this.interval);
     let scroller = this.el.nativeElement.querySelector('.inline-scroller');
     let imgElements = this.el.nativeElement.querySelectorAll('.carousel-img');
     let navigators = this.el.nativeElement.querySelectorAll('.navigator');
@@ -32,10 +34,11 @@ export class CarouselComponent implements AfterViewInit {
     navigators[newImage].classList.add('selected');
     this.currentImage = newImage;
     scroller.scrollLeft = scrollOffset;
+    this.autoplayCarousel();
   }
 
   autoplayCarousel(): void {
-    setInterval(() => {
+    this.interval = setInterval(() => {
       if (this.currentImage + 1 >= this.images.length) {
         this.setCurrentImage(0);
       } else {

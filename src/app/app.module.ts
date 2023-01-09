@@ -20,6 +20,7 @@ import { TestimonialComponent } from './components/shared/testimonial/testimonia
 import { NavLinksComponent } from './components/shared/nav-links/nav-links.component';
 import { HeaderModule } from './components/shared/header/header.module';
 import { HamburgerComponent } from './components/shared/hamburger/hamburger.component';
+import { CardComponent } from './components/shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HamburgerComponent } from './components/shared/hamburger/hamburger.comp
     TestimonialComponent,
     NavLinksComponent,
     FooterComponent,
+    CardComponent,
     HamburgerComponent,
   ],
   imports: [
