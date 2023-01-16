@@ -1,5 +1,10 @@
 export interface Project {
   id: number;
   title: string;
-  images: string[];
+  images: ProjectImage[];
+  keyImage: ProjectImage;
+}
+
+export interface ProjectImage {
+  src: string;
 }

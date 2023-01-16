@@ -1,9 +1,15 @@
 <section id="projects">
   <h2 class="heading bold">Projects</h2>
   <div class="projects-container">
-    <div class="project" *ngFor="let project of projects; let i = index">
-      <h3>{{ projects[i].title }}</h3>
-    </div>
+    <ng-container *ngFor="let project of projects">
+      <div class="single-project">
+        <div
+          class="project"
+          [style.background]="'url(' + project.keyImage.src + ')'"
+          (click)="navigateToProject(project)"></div>
+        <h3>{{ project.title }}</h3>
+      </div>
+    </ng-container>
   </div>
   <div class="section-end">
     <div class="horizontal-line"></div>

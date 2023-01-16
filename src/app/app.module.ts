@@ -21,6 +21,7 @@ import { NavLinksComponent } from './components/shared/nav-links/nav-links.compo
 import { HeaderModule } from './components/shared/header/header.module';
 import { HamburgerComponent } from './components/shared/hamburger/hamburger.component';
 import { CardComponent } from './components/shared/card/card.component';
+import { SingleProjectComponent } from './components/pages/single-project/single-project.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CardComponent } from './components/shared/card/card.component';
     FooterComponent,
     CardComponent,
     HamburgerComponent,
+    SingleProjectComponent,
   ],
   imports: [
     BrowserModule,

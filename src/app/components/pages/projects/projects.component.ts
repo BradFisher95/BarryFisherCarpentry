@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Project } from 'src/app/models/project';
+import { ProjectsService } from 'src/services/projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -7,18 +9,15 @@ import { Project } from 'src/app/models/project';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  public projects: Project[] = [
-    { id: 0, title: 'project-1', images: [] },
-    { id: 1, title: 'project-2', images: [] },
-    { id: 2, title: 'project-3', images: [] },
-    { id: 3, title: 'project-4', images: [] },
-    { id: 0, title: 'project-1', images: [] },
-    { id: 1, title: 'project-2', images: [] },
-    { id: 2, title: 'project-3', images: [] },
-    { id: 3, title: 'project-4', images: [] },
-  ];
-
-  constructor() {}
+  public projects = this.projectService.projects;
+  constructor(
+    private router: Router,
+    private projectService: ProjectsService
+  ) {}
 
   ngOnInit(): void {}
+
+  navigateToProject(project: Project): void {
+    this.router.navigate([`/projects/${project.id}`]);
+  }
 }

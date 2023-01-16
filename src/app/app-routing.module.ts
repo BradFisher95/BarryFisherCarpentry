@@ -6,14 +6,22 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
 import { AboutComponent } from './components/pages/about/about.component';
 import { TestimonialsComponent } from './components/pages/testimonials/testimonials.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { SingleProjectComponent } from './components/pages/single-project/single-project.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'projects', component: ProjectsComponent },
+  {
+    path: 'projects',
+    component: ProjectsComponent,
+  },
   { path: 'about', component: AboutComponent },
   { path: 'testimonials', component: TestimonialsComponent },
   { path: 'contact', component: ContactComponent },
+  {
+    path: 'projects/:projectId',
+    component: SingleProjectComponent,
+  },
 ];
 
 @NgModule({
