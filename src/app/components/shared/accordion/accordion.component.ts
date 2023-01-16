@@ -5,7 +5,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.scss'],
 })
-export class accordionComponent {
+export class AccordionComponent {
   @ViewChild('arrow') Arrow!: ElementRef;
   @ViewChild('info') Info!: ElementRef;
 

@@ -15,13 +15,16 @@ import { TestimonialsComponent } from './components/pages/testimonials/testimoni
 import { ContactComponent } from './components/pages/contact/contact.component';
 
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
-import { accordionComponent } from './components/shared/accordion/accordion.component';
+import { AccordionComponent } from './components/shared/accordion/accordion.component';
 import { TestimonialComponent } from './components/shared/testimonial/testimonial.component';
 import { NavLinksComponent } from './components/shared/nav-links/nav-links.component';
 import { HeaderModule } from './components/shared/header/header.module';
 import { HamburgerComponent } from './components/shared/hamburger/hamburger.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { SingleProjectComponent } from './components/pages/single-project/single-project.component';
+import { CarouselDialogComponent } from './components/shared/dialogs/carousel-dialog/carousel-dialog.component';
+import { ProjectCarouselComponent } from './components/shared/project-carousel/project-carousel.component';
+import { ModalComponent } from './components/shared/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,7 @@ import { SingleProjectComponent } from './components/pages/single-project/single
     CarouselComponent,
     AboutComponent,
     ProjectsComponent,
-    accordionComponent,
+    AccordionComponent,
     TestimonialsComponent,
     ContactComponent,
     TestimonialComponent,
@@ -40,14 +43,11 @@ import { SingleProjectComponent } from './components/pages/single-project/single
     CardComponent,
     HamburgerComponent,
     SingleProjectComponent,
+    CarouselDialogComponent,
+    ProjectCarouselComponent,
+    ModalComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    ReactiveFormsModule,
-    HeaderModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, HeaderModule],
   providers: [],
   bootstrap: [AppComponent],
 })

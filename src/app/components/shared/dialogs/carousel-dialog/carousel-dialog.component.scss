@@ -1,0 +1,17 @@
+.dialog-wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 5rem;
+  z-index: 100;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+}

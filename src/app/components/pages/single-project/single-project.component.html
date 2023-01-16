@@ -1,11 +1,9 @@
 <section id="projects">
-  <h2 class="heading bold">{{project?.title}}</h2>
+  <h2 class="heading bold">{{ project?.title }}</h2>
   <div class="images-container">
-    <ng-container *ngFor="let image of project?.images">
-      <div class="single-image">
-        <div
-          class="image"
-          [style.background]="'url(' + image.src + ')'"></div>
+    <ng-container *ngFor="let image of project?.images; index as i">
+      <div class="single-image" (click)="openModal('carousel-modal', i)">
+        <div class="image" [style.background]="'url(' + image.src + ')'"></div>
       </div>
     </ng-container>
   </div>
@@ -15,3 +13,11 @@
     <div class="horizontal-line"></div>
   </div>
 </section>
+
+<modal id="carousel-modal">
+  <app-carousel-dialog
+    [currentSlide]="currentSlide"
+    (closeModalEmitter)="closeModal($event)"
+    [slides]="slides"
+  ></app-carousel-dialog>
+</modal>
