@@ -5,8 +5,9 @@
       <div class="single-project">
         <div
           class="project"
-          [style.background]="'url(' + project.keyImage.src + ')'"
-          (click)="navigateToProject(project)"></div>
+          (click)="navigateToProject(project)">
+          <img [src]="project.keyImage.src">
+        </div>
         <h3>{{ project.title }}</h3>
       </div>
     </ng-container>

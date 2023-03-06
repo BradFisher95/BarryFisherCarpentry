@@ -12,7 +12,7 @@ export class HomeService {
       title: 'All aspects of first and second fix carpentry',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod tempus consequat. Ut id tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at feugiat odio. Aenean convallis magna tortor, et aliquam augue sagittis sit amet. Vivamus pellentesque et magna id congue. Vivamus aliquet, sem in pharetra placerat, libero lacus rutrum felis, at suscipit metus dolor et neque. Nam sodales, turpis sed venenatis consectetur, massa est facilisis eros, eget accumsan risus ante eu dui. Praesent sollicitudin nibh mi, id consequat neque pulvinar vitae. Fusce accumsan magna in lectus ullamcorper, ac luctus justo imperdiet. Duis ullamcorper ipsum leo, eu interdum ligula venenatis id. Sed cursus eros enim, eleifend fermentum felis ullamcorper euismod. Mauris in consectetur libero. Cras vitae sodales ipsum. ',
-      imgSrc: '../assets/images/kitchens/11.jpg',
+      imgSrc: '../assets/images/progress-projects/04.jpg',
     },
     {
       id: 2,
@@ -20,6 +20,13 @@ export class HomeService {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod tempus consequat. Ut id tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at feugiat odio. Aenean convallis magna tortor, et aliquam augue sagittis sit amet. Vivamus pellentesque et magna id congue. Vivamus aliquet, sem in pharetra placerat, libero lacus rutrum felis, at suscipit metus dolor et neque. Nam sodales, turpis sed venenatis consectetur, massa est facilisis eros, eget accumsan risus ante eu dui. Praesent sollicitudin nibh mi, id consequat neque pulvinar vitae. Fusce accumsan magna in lectus ullamcorper, ac luctus justo imperdiet. Duis ullamcorper ipsum leo, eu interdum ligula venenatis id. Sed cursus eros enim, eleifend fermentum felis ullamcorper euismod. Mauris in consectetur libero. Cras vitae sodales ipsum. ',
       imgSrc: '../assets/images/kitchens/11.jpg',
+    },
+    {
+      id: 7,
+      title: 'Bathroom refits for planning all the way to completion',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod tempus consequat. Ut id tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at feugiat odio. Aenean convallis magna tortor, et aliquam augue sagittis sit amet. Vivamus pellentesque et magna id congue. Vivamus aliquet, sem in pharetra placerat, libero lacus rutrum felis, at suscipit metus dolor et neque. Nam sodales, turpis sed venenatis consectetur, massa est facilisis eros, eget accumsan risus ante eu dui. Praesent sollicitudin nibh mi, id consequat neque pulvinar vitae. Fusce accumsan magna in lectus ullamcorper, ac luctus justo imperdiet. Duis ullamcorper ipsum leo, eu interdum ligula venenatis id. Sed cursus eros enim, eleifend fermentum felis ullamcorper euismod. Mauris in consectetur libero. Cras vitae sodales ipsum. ',
+      imgSrc: '/assets/images/bathrooms/06.JPG',
     },
     {
       id: 3,
@@ -48,13 +55,6 @@ export class HomeService {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod tempus consequat. Ut id tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at feugiat odio. Aenean convallis magna tortor, et aliquam augue sagittis sit amet. Vivamus pellentesque et magna id congue. Vivamus aliquet, sem in pharetra placerat, libero lacus rutrum felis, at suscipit metus dolor et neque. Nam sodales, turpis sed venenatis consectetur, massa est facilisis eros, eget accumsan risus ante eu dui. Praesent sollicitudin nibh mi, id consequat neque pulvinar vitae. Fusce accumsan magna in lectus ullamcorper, ac luctus justo imperdiet. Duis ullamcorper ipsum leo, eu interdum ligula venenatis id. Sed cursus eros enim, eleifend fermentum felis ullamcorper euismod. Mauris in consectetur libero. Cras vitae sodales ipsum. ',
       imgSrc: '/assets/images/carousel-images/img-1.jpg',
-    },
-    {
-      id: 7,
-      title: 'Bathroom refits for planning all the way to completion',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod tempus consequat. Ut id tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at feugiat odio. Aenean convallis magna tortor, et aliquam augue sagittis sit amet. Vivamus pellentesque et magna id congue. Vivamus aliquet, sem in pharetra placerat, libero lacus rutrum felis, at suscipit metus dolor et neque. Nam sodales, turpis sed venenatis consectetur, massa est facilisis eros, eget accumsan risus ante eu dui. Praesent sollicitudin nibh mi, id consequat neque pulvinar vitae. Fusce accumsan magna in lectus ullamcorper, ac luctus justo imperdiet. Duis ullamcorper ipsum leo, eu interdum ligula venenatis id. Sed cursus eros enim, eleifend fermentum felis ullamcorper euismod. Mauris in consectetur libero. Cras vitae sodales ipsum. ',
-      imgSrc: '/assets/images/carousel-images/img-4.jpg',
     },
   ]);
   constructor() {}
