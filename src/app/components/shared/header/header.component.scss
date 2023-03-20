@@ -8,6 +8,7 @@ header {
   .hamburger {
     display: none;
   }
+  
 }
 
 .logo {
@@ -17,6 +18,9 @@ header {
   &:hover {
     cursor: pointer;
   }
+  img {
+    max-width: 175px;
+  } 
 }
 
 .theme-switch {
@@ -29,12 +33,18 @@ header {
 
 @media screen and (max-width: 1000px) {
   header {
+    height: var(--header-height-mobile);
     .hamburger {
       display: block;
     }
 
     .links {
       display: none;
+    }
+    .logo {
+      img {
+          max-width: 135px;
+        }
     }
   }
 }

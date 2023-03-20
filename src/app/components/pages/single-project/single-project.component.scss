@@ -1,4 +1,10 @@
 section {
+  .back-to {
+    padding: 5rem 5rem 0 5rem;
+    cursor: pointer;
+    color: #214170;
+    text-decoration: underline;
+  }
   .heading {
     padding: 5rem 5rem 0 5rem;
   }
@@ -23,6 +29,7 @@ section {
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
           background-repeat: no-repeat;
           overflow: hidden;
+          transition: 0.5s;
           img {
             max-width: 155%;
             height: auto;

@@ -1,13 +1,27 @@
-<div class="hamburger" id="hamburger" #hamburger (click)="this.toggleDrawer()">
+<div
+  class="hamburger"
+  id="hamburger"
+  #hamburger
+  (click)="this.toggleDrawer()">
   <div class="line1"></div>
   <div class="line2"></div>
   <div class="line3"></div>
 </div>
 
-<div class="drawer" id="drawer" #drawer>
-  <div class="drawer-content" #content>
-    <app-nav-links [isVertical]="true" (click)="toggleDrawer()"></app-nav-links>
+<div
+  class="drawer"
+  id="drawer"
+  #drawer>
+  <div
+    class="drawer-content"
+    #content>
+    <app-nav-links
+      [isVertical]="true"
+      (click)="toggleDrawer()"></app-nav-links>
   </div>
 </div>
 
-<div class="dimmer" #dimmer (click)="this.toggleDrawer()"></div>
+<div
+  class="dimmer"
+  #dimmer
+  (click)="this.toggleDrawer()"></div>
