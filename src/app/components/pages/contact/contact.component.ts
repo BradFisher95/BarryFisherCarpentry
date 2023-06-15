@@ -30,7 +30,6 @@ export class ContactComponent {
       this.formService.submitEnquiry(payload).subscribe(
         () => {
           this.contactFormGroup.reset();
-          this.router.navigateByUrl('/contact-success');
         },
         (err) => {
           this.errorMsg = err;
@@ -39,6 +38,6 @@ export class ContactComponent {
     } else {
       this.contactFormGroup.markAllAsTouched();
     }
-    console.log('Form Submitted!');
+    console.log(this.contactFormGroup.value);
   }
 }
