@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, FormArray } from '@angular/forms';
+import { NetlifyFormsService } from 'src/services/netlify-forms.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   contactFormGroup = new FormGroup({
     name: new FormControl(''),
     telephone: new FormControl(''),
@@ -15,11 +17,28 @@ export class ContactComponent implements OnInit {
     enquiryDetails: new FormControl(''),
   });
 
-  constructor() {}
+  constructor(
+    private formService: NetlifyFormsService,
+    private router: Router
+  ) {}
 
-  ngOnInit(): void {}
+  errorMsg = '';
 
   onSubmit(): void {
+    if (this.contactFormGroup.valid) {
+      const payload = this.contactFormGroup.value;
+      this.formService.submitEnquiry(payload).subscribe(
+        () => {
+          this.contactFormGroup.reset();
+          this.router.navigateByUrl('/contact-success');
+        },
+        (err) => {
+          this.errorMsg = err;
+        }
+      );
+    } else {
+      this.contactFormGroup.markAllAsTouched();
+    }
     console.log('Form Submitted!');
   }
 }
