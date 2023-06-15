@@ -3,6 +3,15 @@ section {
   justify-content: space-evenly;
   padding: 5rem;
 
+  .form-submit-success{
+    padding:2rem;
+    background-color: rgb(44, 192, 44);
+    color:white;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size:22px;
+  }
+
   .CTA {
     max-width: 30%;
     display: flex;
