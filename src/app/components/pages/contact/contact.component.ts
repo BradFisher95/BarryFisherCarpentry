@@ -34,7 +34,9 @@ export class ContactComponent {
       this.formService.submitEnquiry(payload).subscribe(
         () => {
           this.contactFormGroup.reset();
-          this.formSuccess = true        },
+          this.formSuccess = true;
+          console.log(this.formSuccess);
+        },
         (err) => {
           this.errorMsg = err;
           console.log(this.errorMsg);
