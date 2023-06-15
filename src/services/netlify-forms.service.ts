@@ -15,9 +15,10 @@ export class NetlifyFormsService {
   constructor(private http: HttpClient) {}
 
   public submitEnquiry(enquiry: any): Observable<any> {
+    console.log(enquiry);
     const entry = new HttpParams({
       fromObject: {
-        'form-name': 'contactFormGroup',
+        'form-name': 'contact',
         ...enquiry,
       },
     });

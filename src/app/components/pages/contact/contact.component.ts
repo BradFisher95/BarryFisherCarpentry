@@ -25,7 +25,9 @@ export class ContactComponent {
   errorMsg = '';
 
   onSubmit(): void {
+    console.log('form submission was callsed');
     if (this.contactFormGroup.valid) {
+      console.log('isValid');
       const payload = this.contactFormGroup.value;
       this.formService.submitEnquiry(payload).subscribe(
         () => {
@@ -33,11 +35,11 @@ export class ContactComponent {
         },
         (err) => {
           this.errorMsg = err;
+          console.log(this.errorMsg);
         }
       );
     } else {
       this.contactFormGroup.markAllAsTouched();
     }
-    console.log(this.contactFormGroup.value);
   }
 }
