@@ -1,9 +1,10 @@
 footer {
+  
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   min-height: 250px;
   background-color: var(--brand-color);
   color: #fff;
