@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class ContactComponent {
   contactFormGroup = new FormGroup({
     name: new FormControl(''),
-    telephone: new FormControl(''),
+    telephone: new FormControl('', null),
     email: new FormControl(''),
     postcode: new FormControl(''),
     enquiryDetails: new FormControl(''),
