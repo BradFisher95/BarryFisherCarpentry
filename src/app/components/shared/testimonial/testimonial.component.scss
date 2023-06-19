@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  aspect-ratio: 1/2;
-  max-width:500px;
+  aspect-ratio: 1/1.25;
+  max-width: 500px;
   border-radius: 9px;
 
   .icon {
@@ -15,5 +15,6 @@
 
   .testimony-container {
     padding: 2rem;
+    font-weight: 700;
   }
 }

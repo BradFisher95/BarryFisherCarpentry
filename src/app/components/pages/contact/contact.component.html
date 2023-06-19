@@ -9,13 +9,15 @@
     <p>
       Please note, I can only undertake work within a 50 mile radius of
       Wolverhampton.
-      <br>
-      <br>
+      <br />
+      <br />
       Thank you.
     </p>
     <span>
       <i class="fa-icon fa-solid fa-at"></i>
-      <a href="mailto:barryfishercarpentry@gmail.com">barryfishercarpentry@gmail.com</a>
+      <a href="mailto:barryfishercarpentry@gmail.com"
+        >barry@barryfishercarpentry.co.uk</a
+      >
     </span>
     <span>
       <i class="fa-icon fa-solid fa-phone"></i>
@@ -27,73 +29,48 @@
     [formGroup]="contactFormGroup"
     (ngSubmit)="onSubmit()"
     name="contact"
-    class="contact-form">
+    class="contact-form"
+  >
     <div>
       <label for="name">
         Name
         <span class="asterisk">*</span>
       </label>
-      <input
-        id="name"
-        type="text"
-        formControlName="name"
-        required>
+      <input id="name" type="text" formControlName="name" required />
     </div>
     <div>
       <label for="telephone">
         Telephone
         <span class="asterisk">*</span>
       </label>
-      <input
-        id="telephone"
-        type="tel"
-        formControlName="telephone"
-        required>
+      <input id="telephone" type="tel" formControlName="telephone" required />
     </div>
     <div>
       <label for="email">Email</label>
-      <input
-        id="email"
-        type="email"
-        formControlName="email">
+      <input id="email" type="email" formControlName="email" />
     </div>
     <div>
       <label for="postcode">
         Postcode
         <span class="asterisk">*</span>
       </label>
-      <input
-        id="postcode"
-        type="text"
-        formControlName="postcode"
-        required>
+      <input id="postcode" type="text" formControlName="postcode" required />
     </div>
     <div>
       <label for="enquiryDetails">
         Enquiry Details
         <span class="asterisk">*</span>
       </label>
-      <textarea
-        id="enquiryDetails"
-        formControlName="enquiryDetails">
+      <textarea id="enquiryDetails" formControlName="enquiryDetails">
       </textarea>
     </div>
     <span class="bold">
       Please note all fields marked
       <span class="asterisk">*</span>
-      are
-      required.
+      are required.
     </span>
-    <button
-      type="submit"
-      class="btn">
-      Submit
-    </button>
+    <button type="submit" class="btn">Submit</button>
   </form>
 
-  <p
-    class="form-submit-success"
-    ng-if="formSuccess">
-    Message Submitted
-  </p>
+  <p class="form-submit-success" ng-if="formSuccess">Message Submitted</p>
 </section>
