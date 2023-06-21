@@ -17,7 +17,7 @@ export class ContactComponent {
     enquiryDetails: new FormControl(''),
   });
 
-  formSuccess = false;
+  formSuccess = true;
 
   constructor(
     private formService: NetlifyFormsService,
