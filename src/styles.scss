@@ -76,12 +76,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--brand-color);
-  border-radius: 10px;
 }
 
 .no-scroll {
