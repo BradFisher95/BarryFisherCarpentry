@@ -1,12 +1,12 @@
 section {
   .back-to {
-    padding: 5rem 5rem 0 5rem;
+    padding: 3rem 3rem 0 3rem;
     cursor: pointer;
     color: #214170;
     text-decoration: underline;
   }
   .heading {
-    padding: 5rem 5rem 0 5rem;
+    padding: 3rem 3rem 0 3rem;
   }
 
   .images-container {
@@ -15,7 +15,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 5rem;
+    padding: 3rem;
 
     .single-image {
       display: flex;

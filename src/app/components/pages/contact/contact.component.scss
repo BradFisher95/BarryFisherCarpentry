@@ -94,10 +94,16 @@ section {
   section {
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    gap: 3rem;
+    padding: 3rem;
+
+
 
     .CTA {
       max-width: 100%;
+      span {
+        font-size: 1.2rem
+      }
     }
   }
 }

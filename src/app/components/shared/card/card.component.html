@@ -2,7 +2,7 @@
   <div class="d-flex space-between">
     <div class="information">
       <h2>{{service?.title}}</h2>
-      <p>{{service?.description}}</p>
+      <p [innerHTML]="service?.description"></p>
     </div>
     <div class="image-container">
       <img
