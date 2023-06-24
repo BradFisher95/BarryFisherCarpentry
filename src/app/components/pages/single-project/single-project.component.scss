@@ -31,7 +31,7 @@ section {
           overflow: hidden;
           transition: 0.5s;
           img {
-            max-width: 155%;
+            max-width: 178%;
             height: auto;
           }
           cursor: pointer;
@@ -45,7 +45,13 @@ section {
         margin-top: 2rem;
       }
     }
-
+  }
+  .back-to-end {
+    padding: 3rem 3rem 3rem 3rem;
+    cursor: pointer;
+    color: #214170;
+    text-decoration: underline;
+    text-align: center;
   }
 }
 
