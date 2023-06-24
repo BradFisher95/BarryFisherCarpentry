@@ -71,6 +71,7 @@ section {
       border: 1px solid transparent;
       outline: none;
       font-family: var(----ff-default);
+      max-width: 100%;
 
       &:focus,
       &:hover {
