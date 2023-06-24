@@ -39,10 +39,16 @@
         type="text"
         formControlName="name"
         required>
+      <div
+        *ngIf="name?.invalid && (name?.dirty || name?.touched)"
+        class="alert">
+        <div *ngIf="name?.errors?.['required']">Please enter your name.</div>
+        <div *ngIf="name?.errors?.['minlength']">Please enter your full name.</div>
+      </div>
     </div>
     <div>
       <label for="telephone">
-        Telephone
+        Mobile Number
         <span class="asterisk">*</span>
       </label>
       <input
@@ -50,13 +56,28 @@
         type="tel"
         formControlName="telephone"
         required>
+      <div
+        *ngIf="telephone?.invalid && (telephone?.dirty || telephone?.touched)"
+        class="alert">
+        <div *ngIf="telephone?.errors?.['required']">Please enter your mobile.</div>
+        <div *ngIf="telephone?.errors?.['pattern']">Please enter a valid mobile number.</div>
+      </div>
     </div>
     <div>
-      <label for="email">Email</label>
+      <label for="email">
+        Email
+        <span class="asterisk">*</span>
+      </label>
       <input
         id="email"
         type="email"
         formControlName="email">
+      <div
+        *ngIf="email?.invalid && (email?.dirty || email?.touched)"
+        class="alert">
+        <div *ngIf="email?.errors?.['required']">Please enter your email.</div>
+        <div *ngIf="email?.errors?.['pattern']">Please enter a valid email address.</div>
+      </div>
     </div>
     <div>
       <label for="postcode">
@@ -68,6 +89,12 @@
         type="text"
         formControlName="postcode"
         required>
+      <div
+        *ngIf="postcode?.invalid && (postcode?.dirty || postcode?.touched)"
+        class="alert">
+        <div *ngIf="postcode?.errors?.['required']">Please enter your postcode.</div>
+        <div *ngIf="postcode?.errors?.['pattern']">Please enter a valid postcode.</div>
+      </div>
     </div>
     <div>
       <label for="enquiryDetails">
@@ -78,16 +105,46 @@
         id="enquiryDetails"
         formControlName="enquiryDetails">
       </textarea>
+      <div
+        *ngIf="enquiryDetails?.invalid && (enquiryDetails?.dirty || enquiryDetails?.touched)"
+        class="alert">
+        <div *ngIf="enquiryDetails?.errors?.['required']">Please enter your enquiry.</div>
+        <div *ngIf="enquiryDetails?.errors?.['minlength']">Please provide more detail.</div>
+      </div>
     </div>
     <span class="bold">
-      Please note all fields marked
+      Please note all fields are required.
       <span class="asterisk">*</span>
-      are required.
     </span>
     <button
+      *ngIf="!formSubmissionAttempt"
       type="submit"
       class="btn">
       Submit
     </button>
+    <div
+      *ngIf="formSuccess"
+      class="form-submit-response-success">
+      <p>
+        Your message has been successfully sent!
+        <br>
+        I will respond to you within 24 hours.
+        <br>
+        Thank you
+      </p>
+    </div>
+    <div
+      *ngIf="formFaliure"
+      class="form-submit-response-failure">
+      <p>
+        Something went wrong.
+        <br>
+        Your message has not been sent.
+        <br>
+        Please fresh the page and try again.
+        <br>
+        Thank you.
+      </p>
+    </div>
   </form>
 </section>

@@ -8,4 +8,10 @@
       *ngFor="let service of services$ | async"
       [service]="service"></app-card>
   </div>
+    <div class="CTA">
+    <span class="CTA-heading bold">Would you like to find out more?</span>
+    <button type="button" class="btn" [routerLink]="['/contact']">
+      Contact
+    </button>
+  </div>
 </div>

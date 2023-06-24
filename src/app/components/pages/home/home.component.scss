@@ -1,7 +1,4 @@
 .home-container {
-  .carousel-container {
-    margin-bottom: 2rem;
-  }
 
   .pageTitle {
     text-align: center;
@@ -9,5 +6,17 @@
 
   .services-container {
     padding: 2rem;
+  }
+  .CTA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+
+    .CTA-heading {
+      font-size: var(--fs-large);
+      padding: 2rem;
+    }
   }
 }
