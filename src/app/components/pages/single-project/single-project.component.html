@@ -3,6 +3,7 @@
     <h3 [routerLink]="['/projects']">Back To Projects</h3>
   </div>
   <h2 class="heading bold">{{ project?.title }}</h2>
+  <p class="fullscreen-notice">Please click on the image to enlarge</p>
   <div class="images-container">
     <ng-container *ngFor="let image of project?.images; index as i">
       <div
