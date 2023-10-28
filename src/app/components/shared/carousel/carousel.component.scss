@@ -3,6 +3,11 @@
     width: 100%;
     img {
       width: 100%;
+      @media screen and (min-width: 1000px) {
+        height: 900px;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
     }
   }
 
